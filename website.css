@@ -1,8 +1,7 @@
 .parallax {
     /* The image used */
-    background-image: url("coral.jpeg");
+    background-color: white;
 
-    /* Set a specific height */
     min-height: 800px;
 
     background-attachment: fixed;
@@ -12,6 +11,10 @@
 }
 
 .paragraph {
-    height:1000px;
+    height:900px;
     font-size:36px
+}
+
+.font-color {
+    color: #814DF6;
 }
