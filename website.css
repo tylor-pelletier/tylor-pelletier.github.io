@@ -1,6 +1,10 @@
+body {
+    font-family: 'Fredoka One', cursive;
+}
+
 .parallax {
     /* The image used */
-    background-image: url("coral.jpeg");
+    background-color: white;
 
     min-height: 800px;
 
