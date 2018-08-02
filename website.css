@@ -4,7 +4,7 @@ body {
 
 .parallax {
     /* The image used */
-    background-color: white;
+    background-image: url("coral.jpeg");
 
     min-height: 800px;
 
