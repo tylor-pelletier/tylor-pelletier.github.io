@@ -19,6 +19,10 @@ body {
     font-size:36px
 }
 
-.font-color {
+.purple-font-color {
     color: #814DF6;
+}
+
+.light-blue-font-color {
+    color: #c9f0ff
 }
