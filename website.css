@@ -16,13 +16,5 @@ body {
 
 .paragraph {
     height:900px;
-    font-size:36px
-}
-
-.purple-font-color {
-    color: #814DF6;
-}
-
-.light-blue-font-color {
-    color: #111723
+    font-size:36px;
 }
