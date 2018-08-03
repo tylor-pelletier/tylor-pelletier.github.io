@@ -33,14 +33,11 @@ body {
     color: #53b98f;
 }
 
-.parallax2{
+.parallax2 {
+    height: 270px;
     background-image: url("abq.jpg");
-    min-height: 400px;
-    background-attachment: fixed;
-    background-position: -250px;
-    background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
+    border: 10px solid #101622;
 }
 
 .interests {
@@ -50,6 +47,9 @@ body {
 
 
 
+.icon-size {
+    font-size: 20px;
+}
 
 .green-text {
     color: #53b98f;
@@ -83,14 +83,23 @@ body {
     font-size: 25px;
 }
 
-@media (min-width: 768px) {
 
-    .parallax2 {
-        background-position: center;
-    }
+
+
+@media (min-width: 768px) {
 
     .about-me {
         height:500px;
+    }
+
+    .parallax2{
+        background-image: url("abq.jpg");
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
     }
 
 }
