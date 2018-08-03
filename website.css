@@ -1,18 +1,16 @@
 body {
-     font-family: 'Fredoka One', cursive;
-     background-color: #e8e7e3;
- }
+    font-family: 'Fredoka One', cursive;
+    background-color: #e8e7e3;
+}
 
-.parallax {
-    /* The image used */
-    background-image: url("succulent.jpeg");
-
+.parallax{
+    background-image: url("https://images.pexels.com/photos/349608/pexels-photo-349608.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
     min-height: 800px;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 }
 
 .paragraph {
@@ -22,4 +20,16 @@ body {
 
 .underline {
     text-decoration: underline;
+}
+
+#name {
+    color: #53b98f;
+}
+
+#header{
+    color: #101622;
+    font-size: 55px;
+    position: absolute;
+    z-index: 1000;
+    top: 200px;
 }
