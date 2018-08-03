@@ -1,6 +1,7 @@
 body {
-    font-family: 'Fredoka One', cursive;
-}
+     font-family: 'Fredoka One', cursive;
+     background-color: ghostwhite;
+ }
 
 .parallax {
     /* The image used */
@@ -20,5 +21,5 @@ body {
 }
 
 .underline {
-    text-decoration: underline ghostwhite;
+    text-decoration: underline;
 }
