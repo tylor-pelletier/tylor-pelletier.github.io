@@ -5,7 +5,7 @@ body {
 
 .parallax{
     background-image: url("succulent.jpeg");
-    min-height: 800px;
+    min-height: 820px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,23 +13,84 @@ body {
     margin: 0;
 }
 
-.paragraph {
-    height:900px;
-    font-size:36px;
+.header-text{
+    color: #101622;
+    font-size: 55px;
+    position: absolute;
+    z-index: 1000;
+    top: 100px;
+}
+
+.about-me {
+    height:805px;
+    font-size: 25px;
+    background-color: #101622;
+}
+
+.about-me-header {
+    padding-top: 20px;
+    font-size: 50px;
+    color: #53b98f;
+}
+
+.parallax2{
+    background-image: url("abq.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: -250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.interests {
+    height: 600px;
+}
+
+
+
+
+
+.green-text {
+    color: #53b98f;
+}
+
+.blue-text {
+    color: #101622;
+}
+
+.tan-text {
+    color: #e8e7e3;
+}
+
+.green-background {
+    background-color: #53b98f;
+}
+
+.blue-background {
+    background-color: #101622;
+}
+
+.tan-background {
+    background-color: #e8e7e3;
 }
 
 .underline {
     text-decoration: underline;
 }
 
-#name {
-    color: #53b98f;
+.letter-size {
+    font-size: 25px;
 }
 
-#header{
-    color: #101622;
-    font-size: 55px;
-    position: absolute;
-    z-index: 1000;
-    top: 200px;
+@media (min-width: 768px) {
+
+    .parallax2 {
+        background-position: center;
+    }
+
+    .about-me {
+        height:500px;
+    }
+
 }
