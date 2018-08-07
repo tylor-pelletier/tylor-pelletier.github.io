@@ -1,5 +1,5 @@
 body {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Roboto', cursive;
     background-color: #e8e7e3;
 }
 
@@ -22,8 +22,8 @@ body {
 }
 
 .about-me {
-    height:805px;
-    font-size: 25px;
+    height:680px;
+    font-size: 20px;
     background-color: #101622;
 }
 
@@ -40,8 +40,20 @@ body {
     border: 10px solid #101622;
 }
 
-.interests {
-    height: 600px;
+.abilities {
+    height: 1440px;
+}
+
+.ability-icons {
+    font-size: 80px;
+}
+
+.cbody {
+    padding: 10px;
+}
+
+.skills {
+    height: 800px;
 }
 
 
