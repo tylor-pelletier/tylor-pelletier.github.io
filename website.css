@@ -22,7 +22,7 @@ body {
 }
 
 .about-me {
-    height:680px;
+    height: 850px;
     font-size: 20px;
     background-color: #101622;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .abilities {
-    height: 1440px;
+    height: 1600px;
 }
 
 .ability-icons {
@@ -53,6 +53,11 @@ body {
 }
 
 .skills {
+    height: 970px;
+    background-color: #101622;
+}
+
+.projects {
     height: 800px;
 }
 
@@ -87,6 +92,11 @@ body {
     background-color: #e8e7e3;
 }
 
+.black-background {
+    background: url('http://thecodeplayer.com/u/m/b1.png');
+    background-size: cover;
+}
+
 .underline {
     text-decoration: underline;
 }
@@ -95,8 +105,43 @@ body {
     font-size: 25px;
 }
 
+.aws-btn {
 
+    --button-default-height: 48px;
+    --button-default-font-size: 14px;
+    --button-default-border-radius: 6px;
+    --button-horizontal-padding: 20px;
+    --button-raise-level: 5px;
+    --button-hover-pressure: 2;
+    --transform-speed: 0.185s;
+    --button-primary-color: #7ac0a2;
+    --button-primary-color-dark: #63a089;
+    --button-primary-color-light: #121722;
+    --button-primary-color-hover: #7fd3ae;
+    --button-primary-border: none;
+    --button-secondary-color: #7ac0a2;
+    --button-secondary-color-dark: #5b917b;
+    --button-secondary-color-light: #e8e7e4;
+    --button-secondary-color-hover: #81ceae;
+    --button-secondary-border: none;
+    --button-anchor-color: #131926;
+    --button-anchor-color-dark: #07090d;
+    --button-anchor-color-light: #e8e7e4;
+    --button-anchor-color-hover: #1f283c;
+    --button-anchor-border: 1px solid transparent;
+}
 
+@media (min-width: 350px) {
+
+    .about-me {
+        height:740px;
+    }
+
+    .abilities {
+        height: 1500px;
+    }
+
+}
 
 @media (min-width: 768px) {
 
@@ -112,6 +157,11 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
+    }
+
+    .skills {
+        background: url('http://thecodeplayer.com/u/m/b1.png');
+        background-size: cover;
     }
 
 }
