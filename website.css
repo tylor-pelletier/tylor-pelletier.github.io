@@ -22,7 +22,7 @@ body {
 }
 
 .about-me {
-    height: 850px;
+    height: 100%;
     font-size: 20px;
     background-color: #101622;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .abilities {
-    height: 1600px;
+    height: 100%;
 }
 
 .ability-icons {
@@ -53,12 +53,47 @@ body {
 }
 
 .skills {
-    height: 970px;
+    height: 100%;
     background-color: #101622;
 }
 
 .projects {
-    height: 800px;
+    height: 100%;
+}
+
+#first-project {
+    background-image: url("#");
+    background-size: cover;
+    height: 300px;
+}
+
+#second-project {
+    background-image: url("popcorn.jpg");
+    background-size: cover;
+    height: 300px;
+}
+
+#third-project {
+    background-image: url("leaderboard.jpeg");
+    background-size: cover;
+    height: 300px;
+}
+
+#fourth-project {
+    background-image: url("simon-says.png");
+    background-size: cover;
+    height: 300px;
+}
+
+#fifth-project {
+    background-image: url("weather.jpeg");
+    background-size: cover;
+    height: 300px;
+}
+
+.resume {
+    height: 100%;
+    background: url('http://thecodeplayer.com/u/m/b1.png');
 }
 
 
@@ -160,7 +195,6 @@ body {
     }
 
     .skills {
-        background: url('http://thecodeplayer.com/u/m/b1.png');
         background-size: cover;
     }
 
