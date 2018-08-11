@@ -11,7 +11,7 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/darkly/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="website.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,100italic,300italic,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,100italic,300italic,400+Sans:100|Quicksand:300">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!--<script>('import'</script>-->
 </head>
@@ -27,9 +27,9 @@
             </div>
             <div class="modal-body">
                 <h3 class="text-success">Email:</h3>
-                <h4>pelletier.tylor@gmail.com</h4>
+                <h4 class="text-white">pelletier.tylor@gmail.com</h4>
                 <h3 class="text-success">Phone Number:</h3>
-                <h4>1+ (207) 307-9147</h4>
+                <h4 class="text-white">(207) 307-9147</h4>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
@@ -40,38 +40,52 @@
 
 <body class="w-100">
 
-    <header class="fixed-top">
+<ul id="dropdown-menu" class="menu cf fixed-top">
+    <li>
+        <a href="" class="">Menu</a>
+        <ul class="submenu">
+            <li><a href="#about-me-anchor">About Me</a></li>
+            <li><a href="#skills-anchor">Skills</a></li>
+            <li><a href="#abilities-anchor">Abilities</a></li>
+            <li><a href="#projects-anchor">Projects</a></li>
+            <li><a href="#resume-contact-anchor">Resume / Contact</a></li>
+        </ul>
+    </li>
+</ul>
+
+    <header id="mobile-nav" class="fixed-top">
         <div class="pos-f-t">
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-dark p-4 text-center">
                     <h1 class="underline text-dark">Navigation</h1>
                     <a href="#about-me-anchor"><h4 class="text-white">About Me</h4></a>
-                    <a href="#skills-abilities-anchor"><h4 class="text-white">Skills and Abilities</h4></a>
+                    <a href="#skills-anchor"><h4 class="text-white">Skills</h4></a>
+                    <a href="#abilities-anchor"><h4 class="text-white">Abilities</h4></a>
                     <a href="#projects-anchor"><h4 class="text-white">Projects</h4></a>
-                    <a href="#resume-anchor"><h4 class="text-white">Resume</h4></a>
-                    <a href="#contact-anchor"><h4 class="text-white">Contact Me</h4></a>
+                    <a href="#resume-contact-anchor"><h4 class="text-white">Resume / Contact</h4></a>
                 </div>
             </div>
             <nav class="navbar navbar-dark is-transparent">
-                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button  class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="text-right">
-                    <button class="btn btn-success contact-me" type="button" data-toggle="modal" data-target="#contact-modal" href="#">Contact Me <i class="fas fa-phone"></i></button>
+                    <button class="btn btn-success contact-me" type="button" data-toggle="modal" data-target="#contact-modal" href="#"><i class="fas fa-mobile-alt mr-1"></i> <i class="far fa-envelope ml-1"></i></button>
                 </div>
             </nav>
         </div>
     </header>
 
     <div class="text-center">
-        <h1 class="header-text"><strong>The world is filled with millions of opportunities waiting to be discovered</strong><br><br><span class="text-success">Tylor<br>Pelletier</span><br><strong class="letter-size">Software Developer</strong></h1>
+        <h1 class="header-text text-white"><strong>The world is filled with millions of opportunities waiting to be discovered</strong><br><br><span class="text-success">Tylor<br>Pelletier</span><br><strong class="letter-size text-white">Software Developer</strong></h1>
+        <!--<h1 class="header-text"><strong>Endless Possibilities</strong><br><br><span class="text-success">Tylor<br>Pelletier</span><br><strong class="letter-size">Software Developer</strong></h1>-->
+        <!--<h1 class="header-text"><strong></strong><br><br><span class="text-success">Tylor<br>Pelletier</span><br><strong class="letter-size">Software Developer</strong></h1>-->
     </div>
 
     <div class="parallax"></div>
 
     <div id="about-me-anchor" class="about-me text-center container-fluid">
-        <br>
-        <h1 class="about-me-header underline">About Me</h1>
+        <h1 class="about-me-header titles">About Me</h1>
         <br>
         <div>
             Growing up I was filled with an aspiration of doing what I could to help make people's lives better. Our world is changing fast and
@@ -81,13 +95,14 @@
             for math, algorithms, problem solving and fear of failure have helped push me to always stay ahead and put in the extra work needed
             to accomplish my tasks at hand.
         </div>
+        <br><br>
     </div>
 
     <div class="parallax2"></div>
 
-    <div id="skills-abilities-anchor" class="bg-light abilities text-center text-white container-fluid">
+    <div id="skills-anchor" class="bg-light abilities text-center text-white container-fluid">
         <br>
-        <h1 class="underline">Abilities</h1>
+        <h1 class="titles">Abilities</h1>
         <br>
         <div class="card text-white bg-success mb-3 w-100">
             <div class="card-header blue-background"><i class="far fa-gem ability-icons"></i></div>
@@ -104,10 +119,10 @@
             </div>
         </div>
         <div class="card text-white bg-success mb-3 w-100">
-            <div class="card-header blue-background"><i class="fas fa-code ability-icons"></i></div>
+            <div class="card-header blue-background"><i class="fas fa-users ability-icons"></i></div>
             <div class="card-body cbody">
-                <h2 class="card-title">Programmer</h2>
-                <div>Always expanding my knowledge of code and new things</div>
+                <h2 class="card-title">Teamwork</h2>
+                <div>People person, I enjoy and work great with other people</div>
             </div>
         </div>
         <div class="card text-white bg-success mb-3 w-100">
@@ -131,11 +146,14 @@
                 <div>From design, to front-end and back-end development</div>
             </div>
         </div>
+        <br><br>
     </div>
 
-    <div class="skills text-center">
+    <div class="teamwork-photo"></div>
+
+    <div id="abilities-anchor" class="skills text-center">
         <br>
-        <h1 class="text-white underline">Skills</h1>
+        <h1 class="green-text titles">Skills</h1>
         <br>
         <div class="container-fluid">
             <div class="progress">
@@ -185,45 +203,105 @@
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <br><br>
+            <br><br><br>
         </div>
     </div>
 
-    <div id="projects-anchor" class="projects text-center green-background">
+    <div class="desk-photo"></div>
+
+    <div id="projects-anchor" class="projects text-center black-background container">
         <br>
-        <h1 class="blue-text underline">Projects</h1>
-        <br><br><br>
-        <div class="blue-text">
-            <h2>Capstone</h2>
-            <a href=""><div id="first-project"></div></a>
-            <a href=""><button class="btn text-white blue-background w-100">Go to Github Project</button></a>
-            <p class="text-white"></p>
-            <br><br><br><br>
-            <h2>Movie Application</h2>
-            <a href="https://github.com/tylor-pelletier/movie-application"><div id="second-project"></div></a>
-            <a href="https://github.com/tylor-pelletier/movie-application"><button class="btn text-white blue-background w-100">Go to Github Project</button></a>
-            <p class="text-white">Single page movie application that allows users to add, edit, delete, and rate movies with an added extra of bringing in the movie’s image, genre and plot information.</p>
-            <br><br><br><br>
-            <h2>Hangman Game</h2>
-            <a href="https://github.com/tylor-pelletier/codeup-java-exercises/blob/master/src/Hangman.java"><div id="third-project"></div></a>
-            <a href="https://github.com/tylor-pelletier/codeup-java-exercises/blob/master/src/Hangman.java"><button class="btn text-white blue-background w-100">Go to Github Project</button></a>
-            <p class="text-white">Classic game where the player picks out of a category of words, enters letter guesses to try and replace the dashes that outline the word. If all the letters or the entire word is guessed before running out of guesses, the player wins.</p>
-            <br><br><br><br>
-            <h2>Simon Says Game</h2>
-            <a href="https://github.com/tylor-pelletier/games/tree/master/simple-simon"><div id="fourth-project"></div></a>
-            <a href="https://github.com/tylor-pelletier/games/tree/master/simple-simon"><button class="btn text-white blue-background w-100">Go to Github Project</button></a>
-            <p class="text-white">Memory game where the computer randomly selects colors in a pattern and you must remember the sequence and select them after the computer is done.</p>
-            <br><br><br><br>
-            <h2>Weather Application</h2>
-            <a href="https://github.com/tylor-pelletier/codeup-web-exercises/blob/master/weather_map.html"><div id="fifth-project"></div></a>
-            <a href="https://github.com/tylor-pelletier/codeup-web-exercises/blob/master/weather_map.html"><button class="btn text-white blue-background w-100">Go to Github Project</button></a>
-            <p class="text-white">A 3 and 5 day weather forecast application that takes in Open Weather Map and Google Maps API’s go change the weather by search, lat/long or map functionality</p>
-            <br><br><br><br>
+        <h1 class="text-white titles">Projects</h1>
+        <br><br>
+        <div class="text-white row justify-content-center">
+            <div class="card border-primary" style="width: 19rem;">
+                <img class="card-img-top" src="space-weather.jpeg" alt="Card image cap">
+                <div class="card-body blue-background">
+                    <h5 class="card-title">TBD</h5>
+                    <p class="card-text"></p>
+                    <a href="" class="btn btn-outline-success">Go to Github Project</a>
+                </div>
+            </div>
         </div>
+        <br><br><br>
+        <div class="text-white row justify-content-center">
+            <div class="card border-primary" style="width: 19rem;">
+                <img class="card-img-top" src="movie-theater.jpeg" alt="Card image cap">
+                <div class="card-body blue-background">
+                    <h5 class="card-title">Movie Application</h5>
+                    <p class="card-text">Single page movie application that allows users to add, edit, delete, and rate movies with an added extra of bringing in the movie’s image, genre and plot information.</p>
+                    <a href="https://github.com/tylor-pelletier/movie-application" class="btn btn-outline-success">Go to Github Project</a>
+                </div>
+            </div>
+        </div>
+            <br><br><br>
+        <div class="text-white row justify-content-center">
+            <div class="card border-primary" style="width: 19rem;">
+                <img class="card-img-top" src="letters.jpeg" alt="Card image cap">
+                <div class="card-body blue-background">
+                    <h5 class="card-title">Hangman Game</h5>
+                    <p class="card-text">Classic game where the player picks out of a category of words, enters letter guesses to try and replace the dashes that outline the word. If all the letters or the entire word is guessed before running out of guesses, the player wins.</p>
+                    <a href="https://github.com/tylor-pelletier/codeup-java-exercises/blob/master/src/Hangman.java" class="btn btn-outline-success">Go to Github Project</a>
+                </div>
+            </div>
+        </div>
+            <br><br><br>
+        <div class="text-white row justify-content-center">
+            <div class="card border-primary" style="width: 19rem;">
+                <img class="card-img-top" src="leaderboard.jpeg" alt="Card image cap">
+                <div class="card-body blue-background">
+                    <h5 class="card-title">Simon Says Game</h5>
+                    <p class="card-text">Memory game where the computer randomly selects colors in a pattern and you must remember the sequence and select them after the computer is done.</p>
+                    <a href="https://github.com/tylor-pelletier/games/tree/master/simple-simon" class="btn btn-outline-success">Go to Github Project</a>
+                </div>
+            </div>
+        </div>
+            <br><br><br>
+        <div class="text-white row justify-content-center">
+            <div class="card border-primary" style="width: 19rem;">
+                <img class="card-img-top" src="cloudy-weather.jpeg" alt="Card image cap">
+                <div class="card-body blue-background">
+                    <h5 class="card-title">Weather Application</h5>
+                    <p class="card-text">A 3 and 5 day weather forecast application that takes in Open Weather Map and Google Maps API’s go change the weather by search, lat/long or map functionality</p>
+                    <a href="https://github.com/tylor-pelletier/codeup-web-exercises/blob/master/weather_map.html" class="btn btn-outline-success">Go to Github Project</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
     </div>
 
-    <div id="resume-anchor" class="resume">
+    <div id="resume-contact-anchor" class="resume blue-background container-fluid">
+        <br><br><br>
 
+        <div class="blob-nav">
+            <div class="wobble"></div>
+            <div class="wobble"></div>
+            <div id="toggle-nav" class="toggle">
+                <span class="hamburger hamburger-1"></span>
+                <span class="hamburger hamburger-2"></span>
+                <span class="hamburger hamburger-3"></span>
+            </div>
+            <nav>
+                <div id="resume-text" class="nav-item"><i>Resume</i></div>
+                <div class="nav-item"><i class="fas fa-file-upload logos"></i></div>
+                <div class="nav-item"><a href="https://www.linkedin.com/in/tylor-pelletier/"><i class="fab fa-linkedin-in logos"></i></a></div>
+                <div class="nav-item"><a href="https://github.com/tylor-pelletier"><i class="fab fa-github logos"></i></a></div>
+            </nav>
+        </div>
+        <br><br><br>
+
+        <!--<div class="text-center row">-->
+            <!--<div class="col-3 text-right">-->
+                <!--<a href="https://www.linkedin.com/in/tylor-pelletier/" class="btn btn-outline-success circle"><i class="fab fa-linkedin-in logos"></i></a>-->
+            <!--</div>-->
+            <!--<div class="col-3 text-left">-->
+                <!--<a href="https://github.com/tylor-pelletier" class="btn btn-outline-success circle"><i class="fab fa-github logos"></i></a>-->
+            <!--</div>-->
+            <!--<div class="col-6 pt-1">-->
+                <!--<a href="" class="btn btn-outline-success">Resume <i class="fas fa-paperclip"></i></a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<br><br>-->
     </div>
 
     <script src="jquery-3.3.1.js"></script>
