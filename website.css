@@ -196,6 +196,13 @@ body {
     font-size: 30px;
 }
 
+.project-description {
+    font-size: 20px;
+    position: relative;
+    z-index: 1000;
+    bottom: 0px;
+}
+
 .resume {
     height: 100%;
 }
@@ -208,9 +215,6 @@ body {
 #resume-text {
     font-size: 12px;
 }
-
-
-
 
 .hide {
     display: none;
@@ -262,6 +266,10 @@ body {
     font-size: 25px;
 }
 
+#dropdown-menu {
+    display: none;
+}
+
 .aws-btn {
 
     --button-default-height: 48px;
@@ -286,10 +294,6 @@ body {
     --button-anchor-color-light: #e8e7e4;
     --button-anchor-color-hover: #1f283c;
     --button-anchor-border: 1px solid transparent;
-}
-
-#dropdown-menu {
-    display: none;
 }
 
 
@@ -543,6 +547,11 @@ nav .slide-out:nth-child(4) {
         /*background-repeat: no-repeat;*/
         background-size: cover;
         margin: 0;
+    }
+
+    .skill-words {
+        font-size: 60px;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .parallax4{
