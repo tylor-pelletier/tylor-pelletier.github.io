@@ -3,7 +3,7 @@ body {
     background-color: #e8e7e3;
 }
 
-.parallax{
+.parallax1{
     background-image: url("iphone-background.jpeg");
     /*background-image: url("succulent.jpeg");*/
     min-height: 820px;
@@ -51,7 +51,7 @@ body {
     padding: 10px;
 }
 
-.teamwork-photo {
+.parallax3 {
     background-image: url("teamwork.jpeg");
     background-size: cover;
     height: 270px;
@@ -62,7 +62,7 @@ body {
     background-color: #101622;
 }
 
-.desk-photo {
+.parallax4 {
     background-image: url("work-table.jpeg");
     background-size: cover;
     height: 270px;
@@ -100,6 +100,100 @@ body {
     background-image: url("cloudy-weather.jpeg");
     background-size: cover;
     height: 300px;
+}
+
+.project1 {
+    background-image: url("space-weather.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+
+.project1header {
+    font-size: 70px;
+    position: relative;
+    z-index: 1000;
+    bottom: 320px;
+}
+
+.project2 {
+    background-image: url("movie-theater.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+
+.project2header {
+    font-size: 70px;
+    position: relative;
+    z-index: 1000;
+    bottom: 320px;
+}
+
+.project3 {
+    background-image: url("letters.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+
+.project3header {
+    font-size: 70px;
+    position: relative;
+    z-index: 1000;
+    bottom: 320px;
+}
+
+.project4 {
+    background-image: url("leaderboard.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+
+.project4header {
+    font-size: 70px;
+    position: relative;
+    z-index: 1000;
+    bottom: 320px;
+}
+
+.project5 {
+    background-image: url("cloudy-weather.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+
+.project5header {
+    font-size: 70px;
+    position: relative;
+    z-index: 1000;
+    bottom: 320px;
+}
+
+.project-buttons {
+    font-size: 30px;
 }
 
 .resume {
@@ -197,6 +291,7 @@ body {
 #dropdown-menu {
     display: none;
 }
+
 
 
 
@@ -413,6 +508,9 @@ nav .slide-out:nth-child(4) {
     transform: translate3d(0, 0, 0) rotate(-45deg);
 }
 
+
+
+
 @media (min-width: 769px) {
 
     .about-me {
@@ -421,7 +519,7 @@ nav .slide-out:nth-child(4) {
 
     .parallax2{
         background-image: url("abq.jpg");
-        min-height: 400px;
+        min-height: 500px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -435,6 +533,26 @@ nav .slide-out:nth-child(4) {
 
     #mobile-nav {
         display: none;
+    }
+
+    .parallax3{
+        background-image: url("teamwork.jpeg");
+        min-height: 800px;
+        /*background-attachment: fixed;*/
+        /*background-position: center;*/
+        /*background-repeat: no-repeat;*/
+        background-size: cover;
+        margin: 0;
+    }
+
+    .parallax4{
+        background-image: url("work-table.jpeg");
+        min-height: 800px;
+        /*background-attachment: fixed;*/
+        /*background-position: center;*/
+        /*background-repeat: no-repeat;*/
+        background-size: cover;
+        margin: 0;
     }
 
 
@@ -578,6 +696,9 @@ nav .slide-out:nth-child(4) {
     .menu > li:hover .submenu li:nth-child(odd){
         transform: skewX(-25deg) translateX(-15px);
     }
+
+
+
 
     /* Slide-out */
 
