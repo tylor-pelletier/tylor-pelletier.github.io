@@ -1,5 +1,14 @@
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
-    font-family: 'Roboto', cursive;
+    /*font-family: 'Roboto', cursive;*/
+    font-family: 'Quicksand', sans-serif;
     background-color: #e8e7e3;
 }
 
@@ -228,6 +237,10 @@ body {
 
 .icon-size {
     font-size: 20px;
+}
+
+.quicksand-font {
+    font-family: 'Quicksand', sans-serif;
 }
 
 .green-text {
@@ -536,8 +549,25 @@ nav .slide-out:nth-child(4) {
     transform: translateY(300px);
     animation: come-in 1.5s ease forwards;
 }
-.come-in:nth-child(odd) {
-    animation-duration: 1.2s;
+.come-in:nth-child(2) {
+    animation-duration: 1.0s;
+    transform: translateX(-300px);
+}
+.come-in:nth-child(6) {
+    animation-duration: 1.0s;
+    transform: translateX(300px);
+}
+.come-in:nth-child(8) {
+    animation-duration: 1.0s;
+    transform: translateX(-300px);
+}
+.come-in:nth-child(12) {
+    animation-duration: 1.0s;
+    transform: translateX(300px);
+}
+.come-in:nth-child(20) {
+    animation-duration: 1.0s;
+    transform: translateX(300px);
 }
 .already-visible {
     transform: translateY(0);

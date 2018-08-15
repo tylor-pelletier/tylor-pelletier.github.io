@@ -26,11 +26,11 @@ scrollNav();
 $(".project-buttons").removeClass("box-shadowing");
 
 $(".project-buttons").mouseenter(function () {
-    $(".project-buttons").addClass("box-shadowing")
+    $(this).addClass("box-shadowing")
 });
 
 $(".project-buttons").mouseout(function () {
-    $(".project-buttons").removeClass("box-shadowing")
+    $(this).removeClass("box-shadowing")
 });
 
 
