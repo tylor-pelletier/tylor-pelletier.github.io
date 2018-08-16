@@ -601,13 +601,13 @@ svg.intro.go .text {
 svg.intro.go .text-stroke {
     fill: none;
     stroke: #101622;
-    stroke-width: 1px;
+    stroke-width: 2px;
     stroke-dashoffset: -900px;
     stroke-dasharray: 900;
     stroke-linecap: butt;
     stroke-linejoin: round;
-    -webkit-animation: dash 4.0s ease-in-out forwards;
-    animation: dash 4.0s ease-in-out forwards;
+    -webkit-animation: dash 10.0s ease-in-out forwards;
+    animation: dash 10.0s ease-in-out forwards;
 }
 svg.intro.go .text-stroke:nth-child(2) {
     -webkit-animation-delay: .1s;
