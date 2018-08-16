@@ -53,8 +53,7 @@ body {
 }
 
 .parallax1{
-    background-image: url("iphone-background.jpeg");
-    /*background-image: url("succulent.jpeg");*/
+    background-image: url("iphone-succulent.jpeg");
     min-height: 820px;
     background-attachment: fixed;
     background-position: center;
