@@ -4,6 +4,8 @@ $("#body").addClass('hide');
 
 $(document).ready(function() {
     $("#body").removeClass('hide');
+
+    $('.intro').addClass('go');
 });
 
 $(function() {
@@ -17,8 +19,6 @@ $(function() {
             $('.wobble').removeClass('ripple');
         }, 1000);
     });
-
-    $('.intro').addClass('go');
 });
 
 function scrollNav() {
