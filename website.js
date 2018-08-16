@@ -1,5 +1,11 @@
 "use strict";
 
+$("#body").addClass('hide');
+
+$(document).ready(function() {
+    $("#body").removeClass('hide');
+});
+
 $(function() {
     $('.toggle').click(function() {
         $('.nav-item').toggleClass('slide-out');

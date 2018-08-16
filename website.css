@@ -12,6 +12,14 @@ body {
     background-color: #e8e7e3;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    diplay: block;
+}
+
 .parallax1{
     background-image: url("iphone-background.jpeg");
     /*background-image: url("succulent.jpeg");*/
