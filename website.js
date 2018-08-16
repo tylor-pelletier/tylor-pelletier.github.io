@@ -6,7 +6,6 @@ $(document).ready(function() {
     $("#body").removeClass('hide');
 
     $('.intro').addClass('go');
-});
 
 $(function() {
     $('.toggle').click(function() {
@@ -95,4 +94,5 @@ win.scroll(function(event) {
         }
     });
 
+});
 });
