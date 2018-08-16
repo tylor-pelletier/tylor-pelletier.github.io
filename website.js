@@ -1,5 +1,8 @@
 "use strict";
-(function(){
+
+$('#body').addClass('hide');
+
+$(function(){
     function id(v){ return document.getElementById(v); }
     function loadbar() {
         var ovrl = id("overlay"),
@@ -21,7 +24,7 @@
             ovrl.style.opacity = 0;
             setTimeout(function(){
                 ovrl.style.display = "none";
-            }, 10000);
+            }, 1200);
         }
         for(var i=0; i<tot; i++) {
             var tImg     = new Image();
@@ -32,6 +35,11 @@
     }
     document.addEventListener('DOMContentLoaded', loadbar, false);
 }());
+
+$(document).ready(function () {
+    $('#body').removeClass('hide').addClass('show');
+    $('.intro').addClass('go');
+});
 
 $(function() {
     $('.toggle').click(function() {
@@ -44,8 +52,6 @@ $(function() {
             $('.wobble').removeClass('ripple');
         }, 1000);
     });
-
-    $('.intro').addClass('go');
 });
 
 function scrollNav() {

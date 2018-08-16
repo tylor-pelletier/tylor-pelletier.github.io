@@ -53,7 +53,7 @@ body {
 }
 
 .parallax1{
-    background-image: url("iphone-succulent.jpeg");
+    background-image: url("iphone-background.jpeg");
     min-height: 820px;
     background-attachment: fixed;
     background-position: center;
@@ -605,8 +605,8 @@ svg.intro.go .text-stroke {
     stroke-dasharray: 900;
     stroke-linecap: butt;
     stroke-linejoin: round;
-    -webkit-animation: dash 10.0s ease-in-out forwards;
-    animation: dash 10.0s ease-in-out forwards;
+    -webkit-animation: dash 3.0s ease-in-out forwards;
+    animation: dash 3.0s ease-in-out forwards;
 }
 svg.intro.go .text-stroke:nth-child(2) {
     -webkit-animation-delay: .1s;
