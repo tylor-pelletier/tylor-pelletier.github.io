@@ -11,6 +11,8 @@ $(function() {
             $('.wobble').removeClass('ripple');
         }, 1000);
     });
+
+    $('.intro').addClass('go');
 });
 
 function scrollNav() {
@@ -32,6 +34,7 @@ $(".project-buttons").mouseenter(function () {
 $(".project-buttons").mouseout(function () {
     $(this).removeClass("box-shadowing")
 });
+
 
 
 
