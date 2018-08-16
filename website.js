@@ -21,7 +21,7 @@
             ovrl.style.opacity = 0;
             setTimeout(function(){
                 ovrl.style.display = "none";
-            }, 4000);
+            }, 10000);
         }
         for(var i=0; i<tot; i++) {
             var tImg     = new Image();
