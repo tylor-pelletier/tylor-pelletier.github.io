@@ -68,6 +68,10 @@ body {
     diplay: block;
 }
 
+#phone-number {
+    color: white;
+}
+
 .parallax1{
     background-image: url("iphone-background.jpeg");
     min-height: 820px;
