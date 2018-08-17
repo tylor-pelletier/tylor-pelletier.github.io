@@ -5,11 +5,11 @@ $('#body').addClass('hide');
 $(document).ready(function() {
     var counter = 0;
     setInterval(function() {
-        if(counter == 3) {
+        if(counter == 4) {
             $('#body').removeClass('hide').addClass('show');
             changeImage(counter);
             counter++;
-        } else if (counter == 4) {
+        } else if (counter == 5) {
             $('.loader').addClass('hide');
         } else {
             changeImage(counter);
@@ -22,8 +22,15 @@ function changeImage(counter) {
     var images = [
         '<i class="fab fa-codepen"></i>',
         '<i class="fa fa-cubes"></i>',
+        '<i class="fas fa-database"></i>',
         '<i class="fas fa-code"></i>',
         '<i class="far fa-file-code"></i>',
+        '<i class="fab fa-html5"></i>',
+        '<i class="fab fa-css3-alt"></i>',
+        '<i class="fab fa-js-square"></i>',
+        '<i class="fab fa-react"></i>',
+        '<i class="fab fa-java"></i>',
+        '<i class="fas fa-cloud-download-alt"></i>',
     ];
     $(".loader .image").html(""+ images[counter] +"");
 }
