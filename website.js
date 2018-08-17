@@ -1,7 +1,5 @@
 "use strict";
 
-$('#body').addClass('hide');
-
 $(function(){
     function id(v){ return document.getElementById(v); }
     function loadbar() {
@@ -36,10 +34,11 @@ $(function(){
     document.addEventListener('DOMContentLoaded', loadbar, false);
 }());
 
+$('#body').addClass('hide');
 $(document).ready(function () {
+
     $('#body').removeClass('hide').addClass('show');
     $('.intro').addClass('go');
-});
 
 $(function() {
     $('.toggle').click(function() {
@@ -128,4 +127,5 @@ win.scroll(function(event) {
         }
     });
 
+});
 });
