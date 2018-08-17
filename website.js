@@ -1,44 +1,34 @@
 "use strict";
 
-$(function(){
-    function id(v){ return document.getElementById(v); }
-    function loadbar() {
-        var ovrl = id("overlay"),
-            prog = id("progress"),
-            stat = id("progstat"),
-            img = document.images,
-            c = 0,
-            tot = img.length;
-        if(tot == 0) return doneLoading();
-
-        function imgLoaded(){
-            c += 1;
-            var perc = ((100/tot*c) << 0) +"%";
-            prog.style.width = perc;
-            stat.innerHTML = "Loading "+ perc;
-            if(c===tot) return doneLoading();
-        }
-        function doneLoading(){
-            ovrl.style.opacity = 0;
-            setTimeout(function(){
-                ovrl.style.display = "none";
-            }, 1200);
-        }
-        for(var i=0; i<tot; i++) {
-            var tImg     = new Image();
-            tImg.onload  = imgLoaded;
-            tImg.onerror = imgLoaded;
-            tImg.src     = img[i].src;
-        }
-    }
-    document.addEventListener('DOMContentLoaded', loadbar, false);
-}());
-
 $('#body').addClass('hide');
-$(document).ready(function () {
 
-    $('#body').removeClass('hide').addClass('show');
-    $('.intro').addClass('go');
+$(document).ready(function() {
+    var counter = 0;
+    setInterval(function() {
+        if(counter == 3) {
+            $('#body').removeClass('hide').addClass('show');
+            changeImage(counter);
+            counter++;
+        } else if (counter == 4) {
+            $('.loader').addClass('hide');
+        } else {
+            changeImage(counter);
+            counter++;
+        }
+    }, 2000);
+});
+
+function changeImage(counter) {
+    var images = [
+        '<i class="fab fa-codepen"></i>',
+        '<i class="fa fa-cubes"></i>',
+        '<i class="fas fa-code"></i>',
+        '<i class="far fa-file-code"></i>',
+    ];
+    $(".loader .image").html(""+ images[counter] +"");
+}
+
+$('.intro').addClass('go');
 
 $(function() {
     $('.toggle').click(function() {
@@ -72,10 +62,6 @@ $(".project-buttons").mouseenter(function () {
 $(".project-buttons").mouseout(function () {
     $(this).removeClass("box-shadowing")
 });
-
-
-
-
 
 (function($) {
 
@@ -127,5 +113,4 @@ win.scroll(function(event) {
         }
     });
 
-});
 });
