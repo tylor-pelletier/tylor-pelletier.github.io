@@ -68,10 +68,6 @@ body {
     diplay: block;
 }
 
-#phone-number {
-    color: white;
-}
-
 .parallax1{
     background-image: url("iphone-background.jpeg");
     min-height: 820px;
@@ -601,7 +597,7 @@ nav .slide-out:nth-child(4) {
     text-transform: uppercase;
 }
 .header-job {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 svg.intro {
