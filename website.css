@@ -60,6 +60,10 @@ body {
     background-color: #e8e7e3;
 }
 
+h4 {
+    color: white;
+}
+
 .hide {
     display: none;
 }
