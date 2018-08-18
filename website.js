@@ -7,9 +7,10 @@ $(document).ready(function() {
     setInterval(function() {
         if(counter == 4) {
             $('#body').removeClass('hide').addClass('show');
-            changeImage(counter);
-            counter++;
-        } else if (counter == 5) {
+            $('.loader').addClass('hide');
+            // changeImage(counter);
+            // counter++;
+        } else if (counter == 4) {
             $('.loader').addClass('hide');
         } else {
             changeImage(counter);
@@ -22,9 +23,9 @@ function changeImage(counter) {
     var images = [
         '<i class="fab fa-codepen"></i>',
         '<i class="fa fa-cubes"></i>',
-        '<i class="fas fa-database"></i>',
         '<i class="fas fa-code"></i>',
         '<i class="far fa-file-code"></i>',
+        '<i class="fas fa-cube"></i>',
         '<i class="fab fa-html5"></i>',
         '<i class="fab fa-css3-alt"></i>',
         '<i class="fab fa-js-square"></i>',
@@ -63,12 +64,12 @@ scrollNav();
 $(".project-buttons").removeClass("box-shadowing");
 
 $(".project-buttons").mouseenter(function () {
-    $(this).addClass("box-shadowing")
+    $(this).addClass("box-shadowing");
+});
+$(".project-buttons").mouseout(function () {
+    $(this).removeClass("box-shadowing");
 });
 
-$(".project-buttons").mouseout(function () {
-    $(this).removeClass("box-shadowing")
-});
 
 (function($) {
 

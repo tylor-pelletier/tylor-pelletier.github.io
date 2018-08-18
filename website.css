@@ -282,6 +282,11 @@ body {
     color: #53b98f;
 }
 
+.logos-blue {
+    font-size: 30px;
+    color: #101622;
+}
+
 #resume-text {
     font-size: 12px;
 }
@@ -344,8 +349,13 @@ body {
     box-shadow: 15px 20px 16px #111111;
 }
 
+.contact-form {
+    width: 90%;
+}
+
 .resume-button {
     padding-top: 11px;
+    color: white;
 }
 
 .laptop-logo {
@@ -626,8 +636,8 @@ svg.intro.go .text-stroke {
     stroke-dasharray: 900;
     stroke-linecap: butt;
     stroke-linejoin: round;
-    -webkit-animation: dash 3.0s ease-in-out forwards;
-    animation: dash 3.0s ease-in-out forwards;
+    -webkit-animation: dash 2.0s ease-in-out forwards;
+    animation: dash 2.0s ease-in-out forwards;
 }
 svg.intro.go .text-stroke:nth-child(2) {
     -webkit-animation-delay: .1s;
@@ -738,6 +748,10 @@ svg.intro.go .text-stroke:nth-child(6) {
     .black-background {
         background: #202020;
         background-size: cover;
+    }
+
+    .contact-form {
+        width: 60%;
     }
 
 
