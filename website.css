@@ -78,6 +78,24 @@ body {
     margin: 0;
 }
 
+#portrait-photo {
+    position: relative;
+    z-index: 1000;
+}
+
+#tylor-pelletier {
+    left: 20%;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -650px;
+    position: absolute;
+    top: 50%;
+    width: 60%;
+    border: 5px solid black;
+    border-radius: 15%;
+    box-shadow: 15px 20px 16px #111111;
+}
+
 .header-text{
     font-size: 53px;
     position: absolute;
@@ -683,6 +701,24 @@ svg.intro.go .text-stroke:nth-child(6) {
 
 
 @media (min-width: 769px) {
+
+    #portrait-photo {
+        position: relative;
+        z-index: 1000;
+    }
+
+    #tylor-pelletier {
+        left: 37%;
+        line-height: 200px;
+        margin: auto;
+        margin-top: -620px;
+        position: absolute;
+        top: 50%;
+        width: 26%;
+        border: 10px solid black;
+        border-radius: 15%;
+        box-shadow: 15px 20px 16px #111111;
+    }
 
     .header-name {
         font-size: 15px;
