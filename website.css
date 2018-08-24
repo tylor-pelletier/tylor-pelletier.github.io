@@ -649,7 +649,7 @@ svg.intro.go .text {
 svg.intro.go .text-stroke {
     fill: none;
     stroke: #101622;
-    stroke-width: 2px;
+    stroke-width: 3px;
     stroke-dashoffset: -900px;
     stroke-dasharray: 900;
     stroke-linecap: butt;
