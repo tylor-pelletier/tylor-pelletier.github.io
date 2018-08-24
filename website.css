@@ -68,8 +68,8 @@ body {
     diplay: block;
 }
 
-.phone-number {
-    color: white; !important
+.contact-info {
+    color: #53b98f;
 }
 
 .parallax1{
@@ -792,6 +792,10 @@ svg.intro.go .text-stroke:nth-child(6) {
 
     .contact-form {
         width: 60%;
+    }
+
+    .contact-details {
+        color: white; !important;
     }
 
 
