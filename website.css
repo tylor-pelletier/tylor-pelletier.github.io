@@ -73,7 +73,7 @@ body {
 }
 
 .parallax1{
-    background-image: url("iphone-background.jpeg");
+    background-color: #303030;
     min-height: 820px;
     background-attachment: fixed;
     background-position: center;
@@ -723,6 +723,16 @@ svg.intro.go .text-stroke:nth-child(6) {
 
 
 @media (min-width: 769px) {
+
+    .parallax1{
+        background-image: url("iphone-background.jpeg");
+        min-height: 820px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+    }
 
     #portrait-photo {
         position: relative;
