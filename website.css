@@ -278,6 +278,24 @@ body {
     bottom: 320px;
 }
 
+.project6 {
+    background-image: url("game.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+
+.project6header {
+    font-size: 70px;
+    position: relative;
+    z-index: 1000;
+    bottom: 320px;
+}
+
 .project-buttons {
     font-size: 30px;
 }
